@@ -7,7 +7,7 @@ const JobCart = ({job}) => {
   return (
     <div className='p-6 border border-gray-300 shadow-xl rounded '>
       <div className=' flex justify-between items-center'>
-        <img className='h-8' src={assets.company_icon} alt=""/>
+        <img className='h-8' src={job.companyId.image} alt=""/>
       </div>
       <h4 className='font-medium text-xl my-3'>{job.title}</h4>
       <div className='flex gap-3 text-sm items-center'>

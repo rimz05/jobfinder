@@ -6,6 +6,9 @@ import {BrowserRouter} from 'react-router-dom'
 import { AppContextProvider } from './context/AppContext.jsx'
 import {ClerkProvider} from '@clerk/clerk-react'
 
+import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
+
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
